@@ -209,6 +209,10 @@ class Uniswap:
                 multicall2_addr = _str_to_addr(
                     "0x50075F151ABC5B6B448b1272A0a1cFb5CFA25828"
                 )
+            elif self.netname == "base":  # Added condition for Base network
+                multicall2_addr = _str_to_addr(
+                    "0x091e99cb1C49331a94dD62755D168E941AbD0693"  # Base Mainnet multicall address
+                )
             else:
                 multicall2_addr = _str_to_addr(
                     "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"
